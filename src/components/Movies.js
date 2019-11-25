@@ -5,7 +5,7 @@ const Movies = () => {
   return (
     <div> 
       <h1>Movies Page</h1>
-        {movies.map(movie => <div> 
+        {movies.map((movie, idx) => <div key={idx}> 
         <h3>Name: {movie.title}</h3>
         <p>Time: {movie.time} </p>
         <ul>
